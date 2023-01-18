@@ -24,7 +24,7 @@
             
             color0fY = e.pageY - contatos.offsetTop;
 
-            // afdicionar eventos 
+            // adicionar eventos 
             addEventListener("mousemove" , colorMov)
             addEventListener("mouseup" ,  colorEnd)
       }

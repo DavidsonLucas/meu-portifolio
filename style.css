@@ -88,10 +88,10 @@ header .color {
 
 .bck {
     background-image: url(asset/bkg.png);
-    padding-left: 14%;
+    padding-left: 10%;
     padding-bottom: 27%;
     padding-top: 17%;
-    background-position: left;
+    background-position: center;
     background-size: cover;
 
 
@@ -131,7 +131,7 @@ header .color {
     rotate: -10deg;
     background: url(asset/bckgrondmeu.png);
     background-position: left;
-    /* background-size:cover ; */
+    background-repeat: no-repeat;
     border: 1px solid red;
     border-radius: 40%;
     box-shadow: 0 0 40px rgb(175, 33, 33);
@@ -161,11 +161,20 @@ header .color {
 .bt-sobre {
     border: 1px solid red;
     border-radius: 50px;
-    padding: 8px;
+    padding: 10px;
     background-color: red;
     cursor: pointer;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+}
+
+.bt-sobre:hover {
+    background-color: #f32626;
+}
+
+.bt-sobre:active {
+    opacity: .2;
+
 }
 
 .projt {
@@ -191,7 +200,7 @@ header .color {
     justify-content: space-evenly;
     align-content: center;
     margin-top: 9rem;
-    margin-bottom: 50px;
+    margin-bottom: 10rem;
 
 }
 
@@ -221,6 +230,7 @@ header .color {
     justify-content: center;
     font-size: 35px;
     max-height: 26px;
+    color: #f9004d;
 
 }
 
@@ -260,6 +270,7 @@ header .color {
     justify-content: center;
     font-size: 42px;
     max-height: 30px;
+    color: #f9004d;
 }
 
 .quadrado2 .pg2 {
@@ -292,6 +303,7 @@ header .color {
     justify-content: center;
     font-size: 35px;
     max-height: 14px;
+    color: #f9004d;
 }
 
 .quadrado3 .pg3 {
@@ -331,11 +343,14 @@ a:hover {
 }
 
 span {
-    color: #993399
+    color: #3c3c3c
 }
-footer{
-    border-top:1px solid #3c3c3c;
-    padding-top:50px ;
+
+footer {
+    border-top: 1px solid #3c3c3c;
+    border-top-left-radius: 180%;
+    border-top-right-radius: 180%;
+    padding-top: 10px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -344,28 +359,34 @@ footer{
     box-shadow: 0 0 10px rgb(175, 33, 33);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
-    
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 
-footer h5{
+footer h5 {
     font-size: 30px;
 }
 
 footer p {
+    color: #3c3c3c;
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 30px;
 }
-.social{
+
+.social {
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
     gap: 30px;
 }
-.social img{
+
+.social img {
     width: 20px;
 }
 
@@ -375,6 +396,70 @@ footer p {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    
-    
+
+
+}
+
+@media screen and (max-width:820px) {
+    header button {
+        display: none;
+    }
+
+    header .color {
+        right: 19rem;
+    }
+
+    .tudo {
+        width: 115%;
+    }
+
+    .bck {
+        background: none;
+    }
+
+    .info .h1-home {
+        text-align: center;
+    }
+
+    .info h3 {
+        text-align: center;
+    }
+
+    #sobre-mim {
+        padding: 1px;
+        box-shadow: 0 0 6px #c72020;
+    }
+
+    .cc {
+        flex-direction: column;
+
+    }
+
+    .img-minha {
+        width: 313px;
+        background-size: cover;
+    }
+
+    .prg-sobre-mim {
+        width: 321px;
+    }
+
+    #my-projetos {
+        padding: 1px;
+        box-shadow: 0 0 6px #c72020;
+    }
+
+    .gg {
+        flex-direction: column;
+        gap: 26px;
+    }
+
+    .df {
+        display: none;
+    }
+
+
+
+
+
 }
