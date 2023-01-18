@@ -34,19 +34,22 @@ header button {
 
     width: 100px;
     height: 30px;
-    border: 1px solid rgba(7, 13, 18, 0.01);
-    ;
+    border: 1px solid rgba(7, 13, 18, 0.01);;
     background-color: transparent;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     color: white;
-    background: rgba(7, 13, 18, 0.2);
+    background: rgba(153, 121, 32, 0.2);
     cursor: pointer;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     font-size: 15px;
 
+}
+.arumar-bnt{
+    display: flex;
+    gap: 10px;
 }
 
 button:hover {
@@ -68,7 +71,7 @@ header .color {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     color: white;
-    background: rgba(7, 13, 18, 0.2);
+    background: rgba(130, 148, 53, 0.2);
     cursor: pointer;
     text-align: center;
     font-family: 'Secular One', sans-serif;
@@ -93,9 +96,6 @@ header .color {
     padding-top: 17%;
     background-position: center;
     background-size: cover;
-
-
-
 }
 
 .info {
@@ -343,7 +343,7 @@ a:hover {
 }
 
 span {
-    color: #3c3c3c
+    color: rgb(196, 4, 4)
 }
 
 footer {

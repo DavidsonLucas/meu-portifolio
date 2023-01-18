@@ -7,7 +7,7 @@
       }
    
       buton.onclick = function(){
-       var cores =  'rgb(' + ramdom(255) + ',' + ramdom(255)  + ',' + ramdom(255) +')';
+       var cores =  'rgb(' + ramdom(66.27) + ',' + ramdom(66.27)  + ',' + ramdom(66.27) +')';
        document.body.style.backgroundColor = cores;
        quadrad.style.backgroundColor = cores;
       }
