@@ -16,7 +16,7 @@
 header {
     border-bottom: 1px transparent;
     padding: 15px;
-    box-shadow: 0 0 60px rgba(16, 13, 59, .45);
+    box-shadow: 0 0 20px rgba(176, 174, 204, 0.45);
     background-color: transparent;
     display: flex;
     justify-content: space-around;
