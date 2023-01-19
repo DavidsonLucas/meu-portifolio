@@ -410,7 +410,7 @@ footer p {
     }
 
     .tudo {
-        width: 115%;
+        width: 100%;
     }
 
     .bck {
@@ -428,6 +428,7 @@ footer p {
     #sobre-mim {
         padding: 1px;
         box-shadow: 0 0 6px #c72020;
+        width: 400px;
     }
 
     .cc {
@@ -447,6 +448,7 @@ footer p {
     #my-projetos {
         padding: 1px;
         box-shadow: 0 0 6px #c72020;
+        width: 400px;
     }
 
     .gg {
