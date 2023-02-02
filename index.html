@@ -5,172 +5,275 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <linkcss2 href="https://fonts.googleapis.com/?family=Roboto:wght@400;500;900&display=swap" r el="stylesheet" />
+
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="shortcut icon" href="img/WhatsApp_Image_2023-01-30_at_03.17.24-removebg-preview (1).png" />
+    <script src="https://kit.fontawesome.com/ef2c46f17f.js" crossorigin="anonymous"></script>
     <title>Meu portifolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Secular+One&display=swap"
-        rel="stylesheet">
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector(".menu_mobile").addEventListener("click", function () {
+                if (document.querySelector(".menu nav ul").style.display == "flex") {
+                    document.querySelector(".menu nav ul").style.display = "none";
+                } else {
+                    document.querySelector(".menu nav ul").style.display = "flex";
+                }
+            });
+        };
+    </script>
 </head>
 
 <body style="background-color: rgb(11, 22, 22);">
-    <header>
-        <h1>Portifo<span>lio</span></h1>
-        <div class="arumar-bnt">
-            <a href="#home"> <button class="bnt selectd " id="my-abotme"> Home</button></a>
-            <a href="#sobre-mim"> <button class="bnt selectd " id="my-abotme">sobre</button></a>
-            <a href="#my-projetos"><button class="bnt rt" id="my-projets">Projetos</button></a>
-            <a href="#contatos"><button class="bnt " id="my-cont"> Contato</button></a>
+
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <img class="img-logo" src="img/WhatsApp_Image_2023-01-30_at_03.17.24-removebg-preview (1).png"
+                    alt="logo">
+            </div>
+            <div class="menu">
+                <nav>
+                    <div class="menu_mobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#sobre-mim">Sobre</a></li>
+                        <li><a href="#conhecimentos">Conhecimentos</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li>
+                            <a href="#contato" class="menu-buttom">Contato</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/DavidsonLucas" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/davidson-lucas-35282b236/" target="_blank"><i
+                                    class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a class="color" id="colore">color</a>
         </div>
-        <a class="color" id="colore">color</a>
     </header>
 
-
-    <div class="tudo">
-        <div class="bck">
-            <div id="home"></div><br><br><br><br><br><br>
-            <div class="info selectd">
-                <h1 class="h1-home"><span>Dav</span>idson Luc<span>as</span></h1>
-                <h3>Desen<span>volve</span>dor Front-<span>end</span></h3>
+    <main>
+        <div class="centro">
+        <section id="banne1">
+            <div class="container">
+                <div class="banner">
+                    <div class="banner-esquerda">
+                        <p>Olá Mundo! <span> 😊 </span> Meu nome é Davidson Lucas</p>
+                        <h1>Davidson Lucas Sales</h1>
+                        <h2>Desenvolvedor</h2>
+                        <p>Programador web com foco no mundo Front-End!</p>
+                        <a class="buttom dd">Saiba mais</a>
+                        <a href="#sobre-mim"></a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div id="sobre-mim"></div><br><br><br><br>
-        <section class=" cc">
-            <img class="img-minha" src="asset/minhafoto.png" alt="" width="500px">
-            <div>
-                <h1 class="h1-sobre-mim">So<span>bre</span> <span>m</span>im </h1>
-                <p class="prg-sobre-mim">
-                    Eu me <span>chamo</span> Davidson , sou um programador <span>Front-end</span> Iniciante, e tenho
-                    aprendizado nas tecnologias:
-                    JavaScript , HTML , CSS e já realizei diversos <span>projetos</span> utilizando essas
-                    <span>tecnologias</span>. Estou em busca
-                    do meu primeiro emprego como programador.
-                </p>
-                <a href="https://user-images.githubusercontent.com/106599546/202854030-81ac4b0f-4d1b-437c-8ad5-9d88efa460ae.png"
-                    target="_blank" class="bt-sobre">Currículo</a>
+            <div class="icone-rolagem">
+                <img src="img/mouse.png" alt="mouse">
             </div>
         </section>
 
-        <div id="my-projetos"></div><br><br><br><br>
-        <h1 class="projt">Pr<span>inci</span>pais Proj<span>etos</span></h1>
-        <div class=" gg">
-            <a href="https://stupendous-lollipop-2c3be5.netlify.app" target="_blank">
-                <div class="quadrado1">
-                    <h1>Calculadora</h1>
-                    <img class="img-calc"
-                        src="https://user-images.githubusercontent.com/106599546/211316781-75cd7b06-13af-40ac-81f1-97bbdb1f73ba.png"
-                        alt="" width="280px">
-                    <p class="pg1">
-                        Nesse projeto bem simples fiz uma calculadora com disaning bem diferenciado, aprendi muito
-                        sobre
-                        <br>o display:grid e sobe muitos eventos do javaScript, os que mas aprendi foi o onclick e sobre
-                        o
-                        <br>keydown onde utilizei muito key pra fazer a ligaçao entre o tlecado do pc com o teclado
-                        digital
-                        <br> da calculadora e gostei muito da respunsividade do meu projeto .
-                    </p>
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7005224381127770112?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7005224381127770112%29"
-                target="_blank">
-                <div class="quadrado2">
-                    <h2>Facebook</h2>
-                    <img class="img-face"
-                        src="https://user-images.githubusercontent.com/106599546/204071125-992c622c-378c-4717-b7c3-3eea6f393bc6.png"
-                        alt="" width="280px">
-                    <p class="pg2">
-                        Esse projeto fiz para treinar os meus conhecimentos com o laravel mix e com o scss e um simples
-                        <br> landing paige do facebok feito com Html,scss um site respunnsivo gostei muito
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                    </p>
-                </div>
-            </a>
 
-            <a href="https://classy-nasturtium-8deab9.netlify.app" target="_blank">
-                <div class="quadrado3">
-                    <h1 class="h1-mini">Mini-potfolío</h1>
-                    <img class="img-mini"
-                        src="https://user-images.githubusercontent.com/106599546/204041379-bc49d2c9-3032-4843-ad69-a67b51492ec5.png"
-                        alt="" width="280px">
-                    <p class="pg3">
-                        Esse e um mini portifolio onde falo sobre minha pessoa e explico qual sao os meus objetivos e
-                        etc falo um poco de tudo
-                        <br>como comecei e onde quero chegar, mostro todos os meu projetos, minhas redes sociais e meu
-                        curriculo.
-                        <br>Aprendi muito com esse projeto que tem uma respunsividade muito da hora, e desining de outro
-                        mundo
-                    </p>
+        <section id="sobre-mim">
+            <div class="container">
+                <div class="sobre-mim">
+                    <div class="sobre-mim-esquerda">
+                        <img class="img-minha" src="img/minhafoto.png" alt="" width="300px" height="400px">
+                    </div>
+                    <div class="sobre-mim-direita">
+                        <div class="titulo">
+                            <p>Qem sou eu</p>
+                            <h1>Sobre mim</h1>
+                        </div>
+                        <p>
+                            Eu me <span>chamo</span> Davidson , sou um programador <span>Front-end</span> Iniciante, e
+                            tenho
+                            aprendizado nas tecnologias:
+                            JavaScript , HTML , CSS e react. <br><br> já realizei diversos <span>projetos</span>
+                            utilizando essas
+                            <span>tecnologias</span>. Estou sempre em constante aprendizado e em busca por novos
+                            desafios.
+                            um deles e meu primeiro emprego como programador.
+                        </p>
+                        <a download
+                            href="https://user-images.githubusercontent.com/106599546/202854030-81ac4b0f-4d1b-437c-8ad5-9d88efa460ae.png"
+                            target="_blank" class="buttom">Currículo</a>
+                    </div>
                 </div>
-            </a>
-
-
-        </div>
-        <div class="gg df">
-            <a href="https://github.com/DavidsonLucas/new-projet/tree/master" target="_blank">
-                <div class="quadrado3">
-                    <h1 class="h1-mini">landing panda</h1>
-                    <img class="img-mini"
-                        src="https://user-images.githubusercontent.com/106599546/212737247-0de348b3-49f7-470d-bd15-17024fdea6f2.png"
-                        alt="" width="280px">
-                    <p class="pg3">
-                        Esse e um projeto onde fiz uma landing paige do panda foi um projeto onde aprendi muito sobre
-                        <br>sobre display:flex e aprendi muito como usar o after e obefore e a usar as class do html.
-                        <br>sem contar que responsividade desse projeto esta muito bom , e desining e bem
-                        diferenciado.
-                    </p>
-                </div>
-            </a>
-
-            <a href="https://github.com/DavidsonLucas/Air-MAX/tree/master" target="_blank">
-                <div class="quadrado3">
-                    <h1 class="h1-mini">Air-MAX</h1>
-                    <img class="img-mini"
-                        src="https://user-images.githubusercontent.com/106599546/212745050-7b326195-15c8-4e73-8ac3-3e50a6834c4d.png"
-                        alt="" width="280px">
-                    <p class="pg3">
-                        Esse e um projeto de quando iniciei na programaçao feito apenas com html e css e a
-                        responsividade dele nao
-                        existe.
-                        <br>
-                        <br>
-                    </p>
-                </div>
-            </a>
-
-            <a href="https://elaborate-jalebi-23e5d3.netlify.app" target="_blank">
-                <div class="quadrado3">
-                    <h1 class="h1-mini">Netflix</h1>
-                    <img class="img-mini"
-                        src="https://user-images.githubusercontent.com/106599546/212755458-f9f356ce-20df-45bf-92f2-a2ebe274441f.png"
-                        alt="" width="280px">
-                    <p class="pg3">
-                        Esse e um e mas um projeto de quando iniciei foi onde quebrei a cabeça e aprendi muito com esse
-                        projeto
-                        <br>foi tambem o primeiro projeto onde usei js.
-                        <br>projeto grande mas feito com html ,css e js.
-                    </p>
-                </div>
-            </a>
-        </div>
+            </div>
+        </section>
     </div>
+            <section id="conhecimentos">
+                <div class="container">
+                    <div class="conhecimentos">
+                        <div class="titulo">
+                            <p>O que estou estudando</p>
+                            <h1>Conhecimentos</h1>
+                        </div>
+                        <div class="conhecimentos-cards">
+                            <div class="card">
+                                <div class="card-area">
+                                    <img src="img/html_icon.png" alt="icon-html">
+                                    <h2>HTML</h2>
+                                    <p>HTMl é uma linguagem de marcação utilizada na construção de páginas na Web.
+                                        Documentos HTML podem ser interpretados por navegadores.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-area">
+                                    <img src="img/css_icon.png" alt="icon-css">
+                                    <h2>CSS</h2>
+                                    <p>O CSS é uma linguagem de folhas de estilos que é utilizada para definir como os
+                                        documentos escritos na linguagem de marcação HTML.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-area">
+                                    <img src="img/js_icon.png" alt="icon-Js">
+                                    <h2>JavaScript</h2>
+                                    <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em
+                                        alto
+                                        nível com tipagem dinâmica fraca e multiparadigma.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-area">
+                                    <img src="img/react_icon.png" alt="icon-React">
+                                    <h2>React.js</h2>
+                                    <p>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces
+                                        de
+                                        usuário em páginas web. É mantido pelo Facebook.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-area">
+                                    <img src="img/icon-figma-removebg-preview (2).png" alt="icon-React">
+                                    <h2>Figma</h2>
+                                    <p>O Figma é um editor gráfico de vetor onde nos ajuda na hora de criar o layout
+                                        grafico
+                                        das nossas paginas web. É mantida por varias empresas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <footer id="contatos">
-        <h5>Davidson Lucas</h5>
-        <p>Mais informaçoes</p>
-        <div class="social">
-            <a class="link-final" href="https://www.linkedin.com/in/davidson-lucas-35282b236/" target="_blank"> <img
-                    src="asset/linkedin.png" alt="linkedin"></a>
-            <a class="link-final" href="https://github.com/DavidsonLucas" target="_blank"> <img
-                    src="asset/githhub44-removebg-preview.png" alt="telefone"></a>
+            <section id="projetos">
+                <div class="container">
+                    <div class="projetos">
+                        <div class="titulo">
+                            <P>Meus projetos</P>
+                            <h1>projetos</h1>
+                        </div>
+                        <div class="projetos-card">
+                            <img src="https://user-images.githubusercontent.com/106599546/211316781-75cd7b06-13af-40ac-81f1-97bbdb1f73ba.png "
+                                alt="calculadora">
+
+                            <div class="projeto-card-desc">
+                                <div class="projeto-card-desc-esquerda">
+                                    <h2>Calculadora</h2>
+                                    <div class="projeto-card-desc-categorias">
+                                        <div class="projeto-card-desc-categoria html">HTML</div>
+                                        <div class="projeto-card-desc-categoria css">CSS</div>
+                                        <div class="projeto-card-desc-categoria javascript">javascript</div>
+                                    </div>
+                                    <div class="projeto-card-desc-direita">
+                                        <p>calculadora simples bem interativa e diferenciada,onde aprendi muito key.
+                                        </p>
+                                        <div class="projeto-card-desc-direita-icons">
+                                            <a href="https://github.com/DavidsonLucas/Calculadora" target="_blank"><i
+                                                    class="fab fa-github"></i></a>
+                                            <a href="https://stupendous-lollipop-2c3be5.netlify.app/" target="_blank"><i
+                                                    class="fas fa-link" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projetos-card">
+                            <img src="https://user-images.githubusercontent.com/106599546/204041379-bc49d2c9-3032-4843-ad69-a67b51492ec5.png "
+                                alt="Mini-portifolio">
+
+                            <div class="projeto-card-desc">
+                                <div class="projeto-card-desc-esquerda">
+                                    <h2>Mini-portifolio</h2>
+                                    <div class="projeto-card-desc-categorias">
+                                        <div class="projeto-card-desc-categoria html">HTML</div>
+                                        <div class="projeto-card-desc-categoria css">CSS</div>
+                                        <div class="projeto-card-desc-categoria javascript">javascript</div>
+                                    </div>
+                                    <div class="projeto-card-desc-direita">
+                                        <p>projeto onde fala de mim e conta um pouco da minha historia onde aprendi
+                                            divisão
+                                            de conteudo. </p>
+                                        <div class="projeto-card-desc-direita-icons">
+                                            <a href="https://github.com/DavidsonLucas/src" target="_blank"><i
+                                                    class="fab fa-github"></i></a>
+                                            <a href="https://classy-nasturtium-8deab9.netlify.app/" target="_blank"><i
+                                                    class="fas fa-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projetos-card">
+                            <img src="https://user-images.githubusercontent.com/106599546/212755458-f9f356ce-20df-45bf-92f2-a2ebe274441f.png "
+                                alt="Netflix">
+
+                            <div class="projeto-card-desc">
+                                <div class="projeto-card-desc-esquerda">
+                                    <h2>Netflix</h2>
+                                    <div class="projeto-card-desc-categorias">
+                                        <div class="projeto-card-desc-categoria html">HTML</div>
+                                        <div class="projeto-card-desc-categoria css">CSS</div>
+                                        <div class="projeto-card-desc-categoria javascript">javascript</div>
+                                    </div>
+                                    <div class="projeto-card-desc-direita">
+                                        <p>landing paeg onde treinei html e css, aprendei muito sobre @keyfarmes.
+                                        </p>
+                                        <div class="projeto-card-desc-direita-icons">
+                                            <a href="https://github.com/DavidsonLucas/Netflix" target="_blank"><i
+                                                    class="fab fa-github"></i></a>
+                                            <a href="https://www.linkedin.com/posts/davidson-lucas-35282b236_netflix-html-css-activity-6980269269976559616-j32_?utm_source=share&utm_medium=member_desktop"
+                                                target="_blank"><i class="fas fa-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="contato" class="container">
+                <h1>you are strong</h1>
+                <img src="img/gif-final.gif" alt="gif-final">
+            </section>
+
+            <footer id="footer">
+                <h5>Davidson Lucas</h5>
+                <p>Mais informaçoes</p>
+                <div class="social">
+                    <a class="link-final" href="https://www.linkedin.com/in/davidson-lucas-35282b236/"
+                        target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a class="link-final" href="https://github.com/DavidsonLucas" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </footer>
         </div>
-    </footer>
+    </main>
+
     </div>
 
     <script src="app.js"></script>

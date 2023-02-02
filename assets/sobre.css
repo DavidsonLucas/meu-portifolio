@@ -1,0 +1,74 @@
+#sobre-mim {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background: var(--bg-second);
+    padding: 300px 200px;
+}
+
+.sobre-mim {
+    display: flex;
+    gap: 19rem;
+    flex: 1;
+}
+
+.sobre-mim-esquerda {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.sobre-mim-esquerda img {
+    box-shadow: rgba(75, 223, 241, 0.4) -5px 5px, 
+    rgba(75, 223, 241, 0.3) -10px 10px, rgba(75, 223, 241, 0.2) -15px 15px, 
+    rgba(75, 223, 241, 0.1) -20px 20px, rgba(75, 223, 241, 0.05) -25px 25px;
+    border-radius: 100px;
+    /* background: url('../img/bckgrondmeu.png'); */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.sobre-mim-esquerda img:hover{
+    background: url(../img/bckgrondmeu.png);
+    background-position: right;
+}
+
+.sobre-mim-direita{
+    flex:1;
+}
+
+.titulo p:first-child{
+    font-size: 2rem;
+    color:#4bdff1;
+}
+
+.titulo p:first-child::after{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background: #4bdff1;;
+    margin: 4px 10px;
+}
+
+.sobre-mim-direita p{
+    font-size: 2rem;
+    max-width: 500px;
+    line-height: 30px;
+}
+
+.titulo h1 {
+    font-size: 4.5rem;
+    margin: 20px 0px;
+  }
+  
+  .sobre-mim-direita a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--second);
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+
