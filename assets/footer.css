@@ -45,3 +45,6 @@ footer p {
     text-decoration: none;
 }
 
+.social a:hover{
+    color: #4bdff1;
+}

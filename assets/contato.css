@@ -5,7 +5,8 @@
     flex-direction: column;
     padding: 10px 45px;
     background: #181818;
-    width: 550px;
+    width: 70%;    
+    max-width: 550px;
     margin: auto;
     margin-top: 50px;
     border-radius: 20px;
