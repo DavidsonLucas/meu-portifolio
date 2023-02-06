@@ -83,7 +83,9 @@
 }
 
 @media screen and (max-width:780px) {
-  
+  header .color{
+    left:7rem
+  }  
   .container{
   padding: 0px 0px;
   }
